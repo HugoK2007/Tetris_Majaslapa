@@ -27,9 +27,9 @@ class Diamond {
     this.dy = dy;
     this.width = width;
     this.minWidth = width;
-    this.maxWidth = width * 3;
+    this.maxWidth = width * 10;
 
-    let colorArray = ["#de3d3d", "#090c0b", "#0d2527", "#267368", "#00b1a0"];
+    let colorArray = ["#8a2be2", "#090c0b", "#dc143c", "#267368", "#ff00ff"];
 
     this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
   }
@@ -37,11 +37,11 @@ class Diamond {
   draw = () => {
     c.beginPath();
     c.moveTo(this.x, this.y);
-    c.lineTo(this.x - this.width / 2, this.y);
-    c.lineTo(this.x, this.y + this.width / 2);
-    c.lineTo(this.x + this.width / 2, this.y);
-    c.lineTo(this.x, this.y - this.width / 2);
-    c.lineTo(this.x - this.width / 2, this.y);
+    c.lineTo(this.x - this.width / 1, this.y);
+    c.lineTo(this.x, this.y + this.width / 1);
+    c.lineTo(this.x + this.width / 1, this.y);
+    c.lineTo(this.x, this.y - this.width / 1);
+    c.lineTo(this.x - this.width / 1, this.y);
     c.closePath();
 
     c.fillStyle = this.color;
@@ -52,15 +52,15 @@ class Diamond {
 
   update = () => {
     if (
-      this.x + this.width / 2 >= window.innerWidth ||
-      this.x - this.width / 2 <= 0
+      this.x + this.width / 1 >= window.innerWidth ||
+      this.x - this.width / 1 <= 0
     ) {
       this.dx = -this.dx;
     }
 
     if (
-      this.y + this.width / 2 >= window.innerHeight ||
-      this.y - this.width / 2 <= 0
+      this.y + this.width / 1 >= window.innerHeight ||
+      this.y - this.width / 1 <= 0
     ) {
       this.dy = -this.dy;
     }
