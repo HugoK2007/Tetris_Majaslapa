@@ -1,3 +1,11 @@
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -26,18 +34,18 @@
   }
 
   .firstsection {
-    background-color: green;
-    height: 250px;
+    background: linear-gradient(-135deg, #042766, #000);
+    height: 750px;
 }
 
 .secondsection {
-    background-color: blue;
-    height: 250px;
+    background: linear-gradient(-135deg, #042766, #000);
+    height: 750px;
 }
 
 .thirdsection {
-    background-color: lightgreen;
-    height: 250px;
+    background: linear-gradient(-135deg, #042766, #000);
+    height: 750px;
 }
 
 .box-main {
@@ -88,7 +96,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    background: linear-gradient(-135deg, #008b8b, #000);
+    background: linear-gradient(-135deg, #042766, #000);
     z-index: 1;
     width: 100vw;
     overflow: hidden;
