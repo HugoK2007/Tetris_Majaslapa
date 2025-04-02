@@ -9,6 +9,9 @@ p {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    position: sticky; 
+	top: 0; 
+	z-index: 100;
   }
   
   /* Style the links inside the navigation bar */
@@ -27,12 +30,6 @@ p {
     color: black;
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
   .firstsection {
     background: linear-gradient(-135deg, #042766, #000);
     height: 750px;
@@ -123,8 +120,32 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 50px;
     font-weight: 500;
-    /* max-width: 50%; */
-    /* margin: 0 auto; */
+    max-width: 50%;
+    margin: 0 auto;
     font-size: 3rem;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+#hero-info {
+    font-size: 25px;
+}
+
+#hero-button {
+    background-color: #04AA6D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+
+.parallax2 {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-wallpaper-tetris-party-deluxe.jpg");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
