@@ -146,7 +146,7 @@ body {
 
 .parallax2 {
   background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-wallpaper-tetris-party-deluxe.jpg");
-  min-height: 600px; 
+  min-height: 1000px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body {
 
 .parallax3 {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwcr9D8g_jxAvAZH-NKLO4dTwtD_jpf3oJew&s");
-    min-height: 600px; 
+    min-height: 1000px; 
 
     background-attachment: fixed;
     background-position: center;
